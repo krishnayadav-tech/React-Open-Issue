@@ -1,5 +1,10 @@
 import { Link, useLocation, useParams } from "react-router-dom";
+import ReactLoading from 'react-loading';
 const IssuePages = (props)=>{
+
+    if(!props.issues){
+        return <ReactLoading type={"bars"} color={"grey"} />
+    }
     let params = useParams();
     let pageNumber = parseInt(params.id);
     let getIssuesfromState = ()=>{

@@ -12,7 +12,7 @@ const IssueInfo = (props)=>{
 
     return (
         
-        <table className="centered">
+        <table className="centered responsive-table">
             <thead>
             <tr>
                 <th>Title</th>
